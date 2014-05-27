@@ -1,0 +1,196 @@
+\documentclass[12pt,titlepage]{article}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{algorithm}
+%\usepackage{algorithmic} 
+%
+%\usepackage{theorem}
+%\usepackage{graphicx}
+%
+%\usepackage[cp1250]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage[polish]{babel}
+%\usepackage[MeX]{polski}
+%
+%\usepackage{makeidx}
+%\usepackage{listings}
+%\usepackage{url}
+%\usepackage{Here}
+
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{stmaryrd}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage[figuresright]{rotating}
+
+%\usepackage[MeX]{polski}
+\usepackage[cp1250]{inputenc}
+
+
+\usepackage[T1]{fontenc}
+%\usepackage[latin2]{inputenc}
+\usepackage[polish]{babel}
+
+\usepackage{geometry}
+\usepackage{pslatex}
+\usepackage{ulem}
+
+\usepackage{lipsum}
+
+\usepackage{listings}
+\usepackage{url}
+\usepackage{Here}
+
+\usepackage{color}
+\definecolor{szary}{gray}{0.6}% jasnoszary
+
+\setlength{\textwidth}{400pt}
+\lstset{numbers=left,
+			numberstyle=\tiny, 
+			basicstyle=\scriptsize\ttfamily, 
+			breaklines=true, 
+			captionpos=b, 
+			tabsize=2}
+
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+
+\selectlanguage{polish}
+
+%\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+%\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\TAB}{\hspace{0.50cm}}
+\newcommand{\IFF}{\leftrightarrow}
+\newcommand{\IMP}{\rightarrow}
+
+\newtheorem{theorem}{Twierdzenie}[section]
+\newtheorem{lemma}{Lemat}[section]
+\newtheorem{example}{Przyk³ad}[section]
+\newtheorem{corollary}{Wniosek}[section]
+\newtheorem{definition}{Definicja}[section]
+
+%\newenvironment{proof}{\par\noindent {\bf Dowód.}}
+%{\begin{flushright} \vspace*{-6mm}\mbox{$\Box$} \end{flushright}}
+%
+%\newenvironment{remark}{\bigskip \par\noindent\begin{small}{\bf Uwaga.}}
+%                       {\vspace*{4mm}\end{small}}
+%
+%\newenvironment{prog}{\par\noindent \sf
+%\begin{tabbing}xx\= xx \= xx\= xx\= \kill}
+%{\end{tabbing} \rm}
+
+
+\hyphenation{wszy-stkich ko-lu-mnê ka¿-da od-leg-³oœæ
+   dzie-dzi-ny dzie-dzi-na rów-nych rów-ny
+   pole-ga zmie-nna pa-ra-met-rów wzo-rem po-cho-dzi
+   o-trzy-ma wte-dy wa-run-ko-wych lo-gicz-nie
+   skreœ-la-na skreœ-la-n¹ ca³-ko-wi-tych wzo-rów po-rz¹-dek po-rz¹d-kiem
+   przy-k³ad pod-zbio-rów po-miê-dzy re-pre-zen-to-wa-ne
+   rów-no-wa¿-ne bi-blio-te-kach wy-pro-wa-dza ma-te-ria-³ów
+   prze-ka-za-nym skoñ-czo-nym mo-¿esz na-tu-ral-na ci¹-gu tab-li-cy
+   prze-ka-za-nej}
+
+\makeindex
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{titlepage}
+\vspace*{\fill}
+\begin{center}
+\begin{picture}(300,510)
+  \put( 10,520){\makebox(0,0)[l]{\large \bf \textsc{Wydzia³ Podstawowych Problemów Techniki}}}
+  \put( 10,500){\makebox(0,0)[l]{\large \bf \textsc{Politechniki Wroc³awskiej}}}
+  \put( 10,280){\makebox(0,0)[l]{\Huge  \bf \textsc{
+  Channels alternative to WiFi in }}}
+  \put( 10,260){\makebox(0,0)[l]{\Huge \bf \textsc{
+  Authenticated Key Establishment }}}
+  \put( 10,240){\makebox(0,0)[l]{\Huge \bf \textsc{
+  protocols for mobile devices}}}
+  \put(100,200){\makebox(0,0)[l]{\large     \textsc{Pawe³ Kêdzia}}}
+
+  \put(170, 80){\makebox(0,0)[l]{\large  {Praca in¿ynierska napisana}}}
+  \put(170, 60){\makebox(0,0)[l]{\large  {pod kierunkiem}}}
+  \put(170, 40){\makebox(0,0)[l]{\large  {dr in¿ £ukasza Krzywieckiego}}}
+
+  \put(100,-80){\makebox(0,0)[bl]{\large \bf \textsc{Wroc³aw 2010}}}
+\end{picture}
+\end{center}
+\vspace*{\fill}
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\pagestyle{headings}
+
+\section*{Introduction}
+
+The goal of the dissertation is to analyze the usability of channels alternative to WiFi in Authenticated Key Establishment (AKE) protocols for mobile devices.
+Authentication and communication protocol in audio channel for mobile devices.
+
+Mobile devices to transfer data mainly use internet. Disadvantage of this method is that network not always is available. In that case one can still transmit data using some another embedded devices like IrDA, Bluetooth or NFC. Unfortunately not every device has these kind of accessories implemented. However, basis of handhelds is to have embedded speaker and microphone. That is why, in this dissertation, to communication between devices were choosen audio channel. Availability audio appliance and a lot of uses of this solution are main advantages. Moreover, the sound waves with appriopriate, not to high sound intensity, does not penetrate through the walls. It causing that waves cannot be receive e.g. on the street when some protected data are sending in the house. Furthermore receiver as like sender do not need to known each other (unlike Bluetooth) before starting the communication. Sender just start to transmit data and receiver in the same time listening broudcast.
+
+To authentication and key agreement between mobile devices was choosen Anonymous Mutual Authentication (AMA) protocol, created by L. Hanzlik, K. Klucznik, £. Krzywiecki and M. Kuty³owski. AMA is simmetric, which means  participants execute the same code. One of the advantage is simple to implemented, even on the devices with low power computing. Every key and encryption are sending by audio channel.
+
+Application created on Android system will serve as proof of concept. Application is called AKEBySound. Managed to determine that exist this kind of applications but none of theme are use to authentication and key exchange protocol. To use this app is enough to have mobile phone/smartform with software Android ( version 4.1.2 or higher ) and working speaker and micrphone, of course.
+
+Dissertation is divided on X parts. The first section focus on analyse the problem. Explain principal issues used to create the application. The first one obviously is a sound. The next one is one of the method to exchange keys on which AMA protocol base. Tutaj cos o bezpieczenstwie bedzie itp. Dowod poprawnosci protokolu i takie tam.
+
+
+
+\section{Analysis of the problem}
+\subsection{Sound}
+\subsection{Diffie-Hellman Key exchange}
+\subsection{Random Oracle Model}
+
+\section{System design}
+\subsection{Assumptions}
+\subsection{Used cases}
+\subsection{Diagram classes}
+\subsection{Activity diagram}
+\subsection{Anonymous Mutual Authentication protocol - Description}
+\subsubsection{Security model assumption}
+
+\section{System implementation}
+\subsection{Description of technology}
+\subsubsection{C++}
+\subsubsection{Android/Java}
+\subsubsection{Crypto++}
+
+\section{Tests}
+\section{Installing and implementation}
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BIBLIOGRAFIA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plain}
+
+\bibliography{P2P}
+
+\end{document}
