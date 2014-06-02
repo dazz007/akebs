@@ -158,6 +158,9 @@ Next chapter is about System design. In subsections are described assumptions of
 
 \section{Analysis of the problem}
 \subsection{Sound}
+
+
+
 \subsection{Diffie-Hellman Key exchange}
 \subsection{Random Oracle Model}
 
@@ -191,7 +194,7 @@ Protocol is very simple to implement. In the first state, parties (Alice and Bob
 
 When parties obtain ephemeral public key of another party, start compute master key $K$. Four different one-time keys are establish by hashing $K$ and number parameter - different for each one-time key. 
 
-Authenticated party is raising ephemeral public key $c_B$
+Authenticated party is raising ephemeral public key $c_B$ (respectively, $c_A$) to power of private key $x_B$ (respectively, $x_A$). On this base authentication. Verifier compute the same value without private key but with the discrete logarithm of $c_A$ (respectively, $c_B$) ($(y_A)^(h_B)$)
 
 \subsubsection{Security model assumption}
 

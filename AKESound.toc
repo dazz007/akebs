@@ -6,15 +6,14 @@
 \contentsline {subsection}{\numberline {1.3}Random Oracle Model}{3}
 \contentsline {section}{\numberline {2}System design}{3}
 \contentsline {subsection}{\numberline {2.1}Assumptions}{3}
-\contentsline {subsection}{\numberline {2.2}Used cases}{3}
-\contentsline {subsection}{\numberline {2.3}Diagram classes}{3}
-\contentsline {subsection}{\numberline {2.4}Activity diagram}{3}
-\contentsline {subsection}{\numberline {2.5}Anonymous Mutual Authentication protocol - Description}{3}
-\contentsline {subsubsection}{\numberline {2.5.1}Security model assumption}{3}
-\contentsline {section}{\numberline {3}System implementation}{3}
-\contentsline {subsection}{\numberline {3.1}Description of technology}{3}
-\contentsline {subsubsection}{\numberline {3.1.1}C++}{3}
-\contentsline {subsubsection}{\numberline {3.1.2}Android/Java}{3}
-\contentsline {subsubsection}{\numberline {3.1.3}Crypto++}{3}
-\contentsline {section}{\numberline {4}Tests}{3}
-\contentsline {section}{\numberline {5}Installing and implementation}{3}
+\contentsline {subsection}{\numberline {2.2}Activity diagram}{3}
+\contentsline {subsection}{\numberline {2.3}Anonymous Mutual Authentication protocol - Description}{3}
+\contentsline {subsubsection}{\numberline {2.3.1}Security model assumption}{5}
+\contentsline {section}{\numberline {3}System implementation}{5}
+\contentsline {subsection}{\numberline {3.1}Description of technology}{5}
+\contentsline {subsubsection}{\numberline {3.1.1}Android/Java}{5}
+\contentsline {subsubsection}{\numberline {3.1.2}C++}{5}
+\contentsline {subsubsection}{\numberline {3.1.3}JNI}{5}
+\contentsline {subsubsection}{\numberline {3.1.4}Crypto++}{5}
+\contentsline {section}{\numberline {4}Tests}{5}
+\contentsline {section}{\numberline {5}Installing and implementation}{5}
